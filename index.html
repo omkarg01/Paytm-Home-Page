@@ -15,7 +15,7 @@
             theme: {
                 extend: {
                     screens: {
-                        lg: '1066px',
+                        lg: '1205px',
                     },
                     colors: {
                         clifford: '#da373d',
@@ -33,7 +33,7 @@
 </head>
 
 <body class="bg-[#F5F7FA]">
-
+    <!-- nav -->
     <div class="text-center shadow-xl">
         <!-- navbar -->
         <nav class="flex justify-between align-middle py-5 mx-20">
@@ -166,7 +166,7 @@
 
 
             </div>
-            
+
             <div class="hidden lg:flex">
                 <div class="m-auto text-white rounded-full py-1 px-1 pl-4 bg-[#00BAF2] hover:bg-[#002970]"
                     onmouseenter="document.getElementById('sign-img').src='https://assetscdn1.paytm.com/frontendcommonweb/9a65db05.svg'"
@@ -179,11 +179,33 @@
         </nav>
     </div>
 
-
-
+    <p class="text-center py-3"><span class="font-semibold">No Wallet KYC Required</span><span> 😊 </span>to pay using
+        UPI on Paytm. <span class="font-semibold">Learn more.</span></p>
 
     <!-- app section -->
-    <section>Playstore Apps</section>
+    <section class="bg-white text-center md:text-left md:flex justify-between py-28">
+        <div class="md:ml-32 md:basis-1/2">
+            <img class="mx-auto md:mx-0 w-20 shadow-xl rounded-2xl mb-10"
+                src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="" srcset="">
+            <h1 class="font-bold text-5xl leading-tight">
+                India's Most-loved <br> Payments App
+            </h1>
+
+            <p class="text-lg font-semibold pt-3 md:max-w-fit mb-8">
+                Recharge & pay bills, book flights & movie tickets, <br>
+                open a savings account, invest in stocks & mutual <br>
+                funds, and do a lot more.
+            </p>
+
+            <a class="bg-black text-white rounded-full py-2 px-5 cursor-pointer">Download Paytm App
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-google-play"></i>
+            </a>
+        </div>
+        <div class="md:basis-1/2">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="">
+        </div>
+    </section>
 
     <!-- recharge section -->
     <section>Recharge Section</section>
