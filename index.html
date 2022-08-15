@@ -15,9 +15,13 @@
             theme: {
                 extend: {
                     screens: {
-                        lg: '1205px',
+                        'sm': '425px',
+                        'md': '936px',
+                        'lg': '1205px'
                     },
                     colors: {
+                        primary: '#00BAF2',
+                        secondary: '#002970',
                         clifford: '#da373d',
                     }
                 }
@@ -29,6 +33,19 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+        @media (width <=1205px) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @media (width<=375px) {
+            html {
+                font-size: 10px;
+            }
+        }
+    </style>
 
 </head>
 
@@ -39,18 +56,18 @@
         <nav class="flex justify-between align-middle py-5 mx-20">
             <div>
                 <img src="https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png" alt="paytm logo"
-                    width="180" height="40" />
+                    width="180" height="40rem" />
             </div>
-            <div class="flex lg:hidden">
+            <div class="flex md:hidden">
                 <i class="fa-solid fa-bars text-black cursor-pointer lg:hidden my-auto"></i>
             </div>
 
-            <div class="hidden lg:flex">
+            <div class="hidden md:flex">
 
 
                 <div class="py-2">
                     <button id="dropdownDefault" data-dropdown-toggle="dropdown"
-                        class="text-gray-900 focus:bg-gray-200 hover:bg-gray-200 font-medium rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
+                        class="text-gray-900 focus:bg-gray-200 hover:bg-gray-200 font-medium rounded-lg text-lg px-2 lg:px-4 py-2 text-center inline-flex items-center"
                         type="button">Paytm for Consumer</button>
                     <!-- Dropdown menu -->
                     <div id="dropdown"
@@ -73,7 +90,7 @@
                 </div>
                 <div class="py-2">
                     <button id="dropdownDefault" data-dropdown-toggle="dropdown"
-                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
+                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-2 lg:px-4 py-2 text-center inline-flex items-center"
                         type="button">Paytm for Business</button>
                     <!-- Dropdown menu -->
                     <div id="dropdown"
@@ -96,7 +113,7 @@
                 </div>
                 <div class="py-2">
                     <button id="dropdownDefault" data-dropdown-toggle="dropdown"
-                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
+                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-2 lg:px-4 py-2 text-center inline-flex items-center"
                         type="button">Company</button>
                     <!-- Dropdown menu -->
                     <div id="dropdown"
@@ -119,7 +136,7 @@
                 </div>
                 <div class="py-2">
                     <button id="dropdownDefault" data-dropdown-toggle="dropdown"
-                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
+                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-2 lg:px-4 py-2 text-center inline-flex items-center"
                         type="button">Investor Relations</button>
                     <!-- Dropdown menu -->
                     <div id="dropdown"
@@ -142,7 +159,7 @@
                 </div>
                 <div class="py-2">
                     <button id="dropdownDefault" data-dropdown-toggle="dropdown"
-                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
+                        class="text-gray-900 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded-lg text-lg px-2 lg:px-4 py-2 text-center inline-flex items-center"
                         type="button">Career</button>
                     <!-- Dropdown menu -->
                     <div id="dropdown"
@@ -167,7 +184,7 @@
 
             </div>
 
-            <div class="hidden lg:flex">
+            <div class="hidden md:flex">
                 <div class="m-auto text-white rounded-full py-1 px-1 pl-4 bg-[#00BAF2] hover:bg-[#002970]"
                     onmouseenter="document.getElementById('sign-img').src='https://assetscdn1.paytm.com/frontendcommonweb/9a65db05.svg'"
                     onmouseleave="document.getElementById('sign-img').src='https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg'">
@@ -183,15 +200,15 @@
         UPI on Paytm. <span class="font-semibold">Learn more.</span></p>
 
     <!-- app section -->
-    <section class="bg-white text-center md:text-left md:flex justify-between py-28">
-        <div class="md:ml-32 md:basis-1/2">
+    <section class="bg-white text-center md:text-left md:flex justify-between py-12 lg:py-28">
+        <div class="md:ml-32 md:basis-1/2 my-5">
             <img class="mx-auto md:mx-0 w-20 shadow-xl rounded-2xl mb-10"
                 src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="" srcset="">
-            <h1 class="font-bold text-5xl leading-tight">
+            <h1 class="font-bold text-3xl md:text-6xl my-3 leading-tight">
                 India's Most-loved <br> Payments App
             </h1>
 
-            <p class="text-lg font-semibold pt-3 md:max-w-fit mb-8">
+            <p class="text-md md:text-xl font-semibold pt-3  md:max-w-fit my-8">
                 Recharge & pay bills, book flights & movie tickets, <br>
                 open a savings account, invest in stocks & mutual <br>
                 funds, and do a lot more.
@@ -202,16 +219,43 @@
                 <i class="fa-brands fa-google-play"></i>
             </a>
         </div>
-        <div class="md:basis-1/2">
-            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="">
+        <div class="md:basis-1/2 mx-auto">
+            <img class="w-[40vw] mx-auto md:ml-auto md:mx-0"
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="">
         </div>
     </section>
 
     <!-- recharge section -->
-    <section>Recharge Section</section>
+    <section class="bg-primary text-white py-20">
+        <div class="w-[80%] mx-auto">
+            <h1 class="text-4xl font-bold">Recharge & Pay Bills on Paytm.</h1>
+            <div class="mt-10 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 ">
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#1f83a1] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+            </div>
+        </div>
+    </section>
 
     <!-- book section -->
-    <section>Book Section</section>
+    <section class="bg-secondary text-white py-20">
+        <div class="w-[80%] mx-auto">
+            <h1 class="text-4xl font-bold">Book & Buy on Paytm.</h1>
+            <div class="mt-10 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 ">
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+                <div class="hover:bg-[#0e2a5b] ease-in-out duration-100 cursor-pointer p-3 rounded-xl w-[80%]"><img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" srcset="">  <p class="text-lg mt-3" >Recharge <br> Prepaid <br> Mobile <i class="fa-solid fa-angle-right"></i></p></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Paytm Payment Instruments -->
     <section>

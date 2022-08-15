@@ -1,11 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
-  theme: {
-    screens: {
-      lg: '1070px',
-    },
-    extend: {},
-  },
-  plugins: [],
-}
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   content: [],
+//   theme: {
+//     screens: {
+//       // lg: '1070px',
+//       'md':'936px',
+//     },
+//     extend: {},
+//   },
+//   plugins: [],
+// }
