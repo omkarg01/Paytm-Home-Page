@@ -1,4 +1,4 @@
-# Assignment 2
+# Paytm-Home-Page
 
 ![name](https://img.shields.io/badge/Omkar--Gujja-OG)
 ![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-green)
